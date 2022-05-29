@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+$base-color: #5451fa;
+$white-color: #dcdafe;
+$dark-color: #4a4a4a;
+$light-color: #979797;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $base-color;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.topbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+
+  .icon {
+    margin-left: 0.5rem;
+    img {
+      height: 1.5rem;
+    }
+  }
+}
+
+.background {
+  border-radius: 1rem;
+  background-image: url(/assets/background.png);
+  background-position: 0 0;
+  background-size: cover;
+  height: 7rem;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.picture {
+  border-radius: 50%;
+  background-image: url(/assets/avatar.png);
+  background-position: 0 0;
+  background-size: cover;
+  height: 8rem;
+  width: 8rem;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3.5rem;
+}
+
+.name {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .name {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .verified img {
+    height: 1rem;
+    margin-left: 0.5rem;
+    color: $base-color;
+  }
+}
+
+.bio {
+  font-size: 0.8rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: $dark-color;
+}
+
+.stats {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  text-align: center;
+  margin: 2rem auto 1rem;
+
+  .value {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .followers {
+    color: $base-color;
+  }
+}
+
+.follow {
+  background-color: $base-color;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.info {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 80%;
+  color: $dark-color;
+  font-size: 0.8rem;
+
+  & > div {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .description {
+    margin-left: 0.5rem;
+  }
+}

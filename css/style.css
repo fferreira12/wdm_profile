@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #5451fa;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.topbar .icon {
+  margin-left: 0.5rem;
+}
+
+.topbar .icon img {
+  height: 1.5rem;
+}
+
+.background {
+  border-radius: 1rem;
+  background-image: url(/assets/background.png);
+  background-position: 0 0;
+  background-size: cover;
+  height: 7rem;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.picture {
+  border-radius: 50%;
+  background-image: url(/assets/avatar.png);
+  background-position: 0 0;
+  background-size: cover;
+  height: 8rem;
+  width: 8rem;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 3.5rem;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name .name {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.name .verified img {
+  height: 1rem;
+  margin-left: 0.5rem;
+  color: #5451fa;
+}
+
+.bio {
+  font-size: 0.8rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  text-align: center;
+  margin: 2rem auto 1rem;
+}
+
+.stats .value {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.stats .description {
+  font-size: 0.9rem;
+}
+
+.stats .followers {
+  color: #5451fa;
+}
+
+.follow {
+  background-color: #5451fa;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.info {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 80%;
+  color: #4a4a4a;
+  font-size: 0.8rem;
+}
+
+.info > div {
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info .description {
+  margin-left: 0.5rem;
+}
